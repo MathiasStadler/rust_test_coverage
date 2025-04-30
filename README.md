@@ -15,14 +15,14 @@
 
 ## test code block
 
-```bash
+```bash <!-- markdownlint-disable-line code-block-style -->
 # point stands for  current directory
 cargo init ,
 ```
 
 ## init
 
-```bash
+```bash <!-- markdownlint-disable-line code-block-style -->
 touch README.md \
 && ln -s README.md README \
 && cargo init "." \
@@ -56,29 +56,23 @@ touch README.md \
 
 > [!TIP]
 > [Markdownlint: Inline rule ignore](https://github.com/DavidAnson/markdownlint/blob/main/README.md#configuration)
+<-- empty line -->
+&nbsp;
 > [!TIP]
 > Show all already installed components
-<!-- markdownlint-disable-line code-block-style -->
-> ```bash
-> cargo install --list
+>
+> ```bash <!-- markdownlint-disable-line code-block-style -->
+>
+>cargo install --list
 >```
-<!-- markdownlint-enable-line code-block-style -->
 >
-> or show all Rust binary
+&nbsp;
+> [!TIP]
+> Or show all Rust binary
 >
-> ```bash
+> ```bash <!-- markdownlint-disable-line code-block-style -->
 > ls -la ~/.cargo/bin/
 > ```
-
-```bash <!-- markdownlint-disable-line code-block-style -->
-cargo install --list
-```
-
-<!-- markdownlint-disable no-space-in-emphasis -->
-space * in * emphasis
-<!-- markdownlint-enable no-space-in-emphasis -->
-
-ls -la ~/.cargo/bin/
 
 ## install cargo-nextest and check
 
@@ -87,12 +81,11 @@ ls -la ~/.cargo/bin/
 >
 > cargo-add — Add dependencies to a Cargo.toml manifest file
 > cargo install - Build and install a Rust binary to the local rust installation
-
-'''bash
-cargo install  cargo-nextest
-
-cargo install --list |grep nextest
-'''
+>
+> ```bash <!-- markdownlint-disable-line code-block-style -->
+> cargo install  cargo-nextest
+> cargo install --list |grep nextest
+>```
 
 ## buffer
 
