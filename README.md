@@ -19,6 +19,7 @@
 > ```
 > ````
 >
+&nbsp;
 > [!NOTE]
 > [e.g](https://simple.wikipedia.org/wiki/Exempli_gratia)
 >
@@ -31,10 +32,10 @@
 
 ## create project folder on linux console e.g. inside your own home directory
 
-    ```bash <!-- markdownlint-disable-line code-block-style -->
-    # cd && mkdir <project_name> && cd $_
-    cd && mkdir rust_test_coverage && cd $_ 
-    ```
+```bash <!-- markdownlint-disable-line code-block-style -->
+# cd && mkdir <project_name> && cd $_
+cd && mkdir rust_test_coverage && cd $_ 
+```
 
 ## init
 
@@ -89,12 +90,16 @@ touch README.md \
 > ls -la ~/.cargo/bin/
 > ```
 
-## install cargo-nextest and check
+## Install cargo-nextest and check
+
+```bash <!-- markdownlint-disable-line code-block-style -->
+cargo install cargo-nextest 
+```
 
 > [!NOTE]
 > cargo add vs cargo install
 >
-> - cargo-add — Add dependencies to a Cargo.toml manifest file
+> - cargo add — Add dependencies to a Cargo.toml manifest file
 > - cargo install - Build and install a Rust binary to the local rust installation
 >
 > ```bash <!-- markdownlint-disable-line code-block-style -->
@@ -107,6 +112,18 @@ touch README.md \
 > ```bash <!-- markdownlint-disable-line code-block-style -->
 > cargo install --list |grep cargo-nextest
 > ```
+
+## Rust supports three types of tests: unit, doc, and integration
+
+### unit test  - inside the same file
+
+- [create HelloWorld with test](https://learn-with-tests.github.io/learn-rust-with-tests/)
+
+```bash <!-- markdownlint-disable-line code-block-style --> 
+
+```
+
+## [follow the tutorial](https://zerotomastery.io/blog/complete-guide-to-testing-code-in-rust/)
 
 ## buffer
 
