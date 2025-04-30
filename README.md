@@ -20,7 +20,7 @@
 >
 > ```` <!-- markdownlint-disable-line code-block-style -->
 > ```bash <!-- markdownlint-disable-line code-block-style -->
-> # bash code block
+> # bash code HERE
 > ```
 > ````
 >
