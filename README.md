@@ -13,6 +13,13 @@
 > [!NOTE]
 > Code block is marked by single quotation marks
 
+## test code block
+
+```bash
+# point stands for  current directory
+cargo init ,
+```
+
 ## init
 
 '''bash
@@ -64,8 +71,8 @@ ls -la ~/.cargo/bin/
 > [!NOTE]
 > cargo add vs cargo install
 >
-> > cargo-add — Add dependencies to a Cargo.toml manifest file
-> > cargo install - Build and install a Rust binary to the local rust installation
+> cargo-add — Add dependencies to a Cargo.toml manifest file
+> cargo install - Build and install a Rust binary to the local rust installation
 
 '''bash
 cargo install  cargo-nextest
