@@ -39,10 +39,42 @@ touch README.md \
 
 - [Should unit tests really be put in the same file as the source?](https://users.rust-lang.org/t/should-unit-tests-really-be-put-in-the-same-file-as-the-source/62153/2)
   
-  - **REASON** A nice benefit of that is that it speeds up compilation times, because the compiler doesn't have to parse the tests :smiley:
+  - **REASON** A nice advantage of this separation is that it speeds up compilation and thus saves time, since the compiler does not have to analyze/compile the tests. :smiley:
   
 - [Test Organization](https://doc.rust-lang.org/book/ch11-03-test-organization.html)
 
 - [Complete Guide To Testing Code In Rust](https://zerotomastery.io/blog/complete-guide-to-testing-code-in-rust/)
 
 - [cargo-nextest HIGH ACTIVITY](https://crates.io/crates/cargo-nextest)
+
+> [!TIP]
+> Show all already installed components
+> '''bash
+> cargo install --list
+>
+> \# or
+>
+> ls -la ~/.cargo/bin/
+> '''
+
+ls -la ~/.cargo/bin/
+
+## install cargo-nextest and check
+
+> [!NOTE]
+> cargo add vs cargo install
+>
+> > cargo-add — Add dependencies to a Cargo.toml manifest file
+> > cargo install - Build and install a Rust binary to the local rust installation
+
+'''bash
+cargo install  cargo-nextest
+
+cargo install --list |grep nextest
+'''
+
+## buffer
+
+    - color-eyre v0.6.3
+    - async-scoped v0.9.0
+  
