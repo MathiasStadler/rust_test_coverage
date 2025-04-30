@@ -1,6 +1,7 @@
 # rust_test
 
-    - explore rust test inline the same files and separate directory further as module -- a rocky road  :smiley:
+    - explore rust test inline the same files and separate directory further as module 
+    - :smiley: a rocky road
 
 ## create project folder on linux console inside home directory
 
@@ -10,7 +11,7 @@
     ```
 
 > [!NOTE]
-> single quotation mark enclose code block
+> Code block is marked by single quotation marks
 
 ## init
 
