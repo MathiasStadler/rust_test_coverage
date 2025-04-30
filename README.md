@@ -1,14 +1,8 @@
 # rust_test
 
     - explore rust test inline the same files and separate directory further as module 
-    - :smiley: a rocky road
-
-## create project folder on linux console inside home directory
-
-    ```bash <!-- markdownlint-disable-line code-block-style -->
-    # cd && mkdir <project_name> && cd $_
-    cd && mkdir rust_test_coverage && cd $_ 
-    ```
+    - a rocky road
+  :smiley:
 
 > [!NOTE]
 > Code block is marked by [backticks](https://commonmark.org/help/tutorial/09-code.html)
@@ -25,13 +19,22 @@
 > ```
 > ````
 >
+> [!NOTE]
+> [e.g](https://simple.wikipedia.org/wiki/Exempli_gratia)
+>
+> - Exempli gratia is a linking word \
+> mostly known in English-speaking countries \
+> by its abbreviation \
+> e.g., means "for example" in Latin. \
+>
+&nbsp;
 
-## test code block
+## create project folder on linux console e.g. inside your own home directory
 
-```bash <!-- markdownlint-disable-line code-block-style -->
-# point stands for  current directory
-cargo init ,
-```
+    ```bash <!-- markdownlint-disable-line code-block-style -->
+    # cd && mkdir <project_name> && cd $_
+    cd && mkdir rust_test_coverage && cd $_ 
+    ```
 
 ## init
 
@@ -75,7 +78,6 @@ touch README.md \
 > Show all already installed components
 >
 > ```bash <!-- markdownlint-disable-line code-block-style -->
->
 >cargo install --list
 >```
 >
@@ -89,14 +91,6 @@ touch README.md \
 
 ## install cargo-nextest and check
 
-> [!INFO]
-> [e.g](https://simple.wikipedia.org/wiki/Exempli_gratia)
->
-> - Exempli gratia is a linking word
-> mostly known in English-speaking countries
-> by its abbreviation e.g., means "for example" in Latin.
->
-&nbsp;
 > [!NOTE]
 > cargo add vs cargo install
 >
