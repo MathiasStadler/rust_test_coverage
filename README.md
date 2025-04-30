@@ -12,6 +12,7 @@
 
 > [!NOTE]
 > Code block is marked by [backticks](https://commonmark.org/help/tutorial/09-code.html)
+>
 &nbsp;
 > [!NOTE]
 > Extension markdownlint: disable problem message inside MS VSCode for code block e.g. bash code block
@@ -68,6 +69,7 @@ touch README.md \
 
 > [!TIP]
 > [Markdownlint: Inline rule ignore](https://github.com/DavidAnson/markdownlint/blob/main/README.md#configuration)
+>
 &nbsp;
 > [!TIP]
 > Show all already installed components
