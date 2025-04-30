@@ -75,6 +75,14 @@ touch README.md \
 
 ## install cargo-nextest and check
 
+> [!INFO]
+> [e.g](https://simple.wikipedia.org/wiki/Exempli_gratia)
+>
+> - Exempli gratia is a linking word
+> mostly known in English-speaking countries
+> by its abbreviation e.g., means "for example" in Latin.
+>
+&nbsp;
 > [!NOTE]
 > cargo add vs cargo install
 >
@@ -82,9 +90,15 @@ touch README.md \
 > - cargo install - Build and install a Rust binary to the local rust installation
 >
 > ```bash <!-- markdownlint-disable-line code-block-style -->
-> cargo install  cargo-nextest
-> cargo install --list |grep nextest
+> cargo add color-eyre
+> cargo install nextest
 >```
+>
+> list installed Rust binary e.g. cargo-nextest
+>
+> ```bash <!-- markdownlint-disable-line code-block-style -->
+> cargo install --list |grep cargo-nextest
+> ```
 
 ## buffer
 
