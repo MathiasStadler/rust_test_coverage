@@ -5,13 +5,28 @@
 
 ## create project folder on linux console inside home directory
 
-    ```bash
+    ```bash <!-- markdownlint-disable-line code-block-style -->
     # cd && mkdir <project_name> && cd $_
-    cd && mkdir rust_test && cd $_ 
+    cd && mkdir rust_test_coverage && cd $_ 
     ```
 
 > [!NOTE]
-> Code block is marked by single quotation marks
+> Code block is marked by [backticks}(https://commonmark.org/help/tutorial/09-code.html)
+&nbsp
+> [!NOTE]
+> Extension markdownlint: disable problem message inside MS VSCode for code block e.g. bash code block
+> MD046/code-block-style: Code block style [Expected: indented; Actual: fenced]
+>
+> ```bash <!-- markdownlint-disable-line code-block-style -->
+> ```bash <!-- markdownlint-disable-line code-block-style -->
+> ```
+>
+> ```` <!-- markdownlint-disable-line code-block-style -->
+> ```bash <!-- markdownlint-disable-line code-block-style -->
+> # bash code block
+> ```
+> ````
+>
 
 ## test code block
 
