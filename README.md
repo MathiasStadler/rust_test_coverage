@@ -22,7 +22,7 @@ cargo init ,
 
 ## init
 
-'''bash
+```bash
 touch README.md \
 && ln -s README.md README \
 && cargo init "." \
@@ -38,7 +38,7 @@ touch README.md \
 && rustup update  --force \
 && rustup show \
 && mkdir tests
-'''
+```
 
 ## source
 
@@ -55,14 +55,28 @@ touch README.md \
 - [cargo-nextest HIGH ACTIVITY](https://crates.io/crates/cargo-nextest)
 
 > [!TIP]
+> [Markdownlint: Inline rule ignore](https://github.com/DavidAnson/markdownlint/blob/main/README.md#configuration)
+> [!TIP]
 > Show all already installed components
-> '''bash
+<!-- markdownlint-disable-line code-block-style -->
+> ```bash
 > cargo install --list
+>```
+<!-- markdownlint-enable-line code-block-style -->
 >
-> \# or
+> or show all Rust binary
 >
+> ```bash
 > ls -la ~/.cargo/bin/
-> '''
+> ```
+
+```bash <!-- markdownlint-disable-line code-block-style -->
+cargo install --list
+```
+
+<!-- markdownlint-disable no-space-in-emphasis -->
+space * in * emphasis
+<!-- markdownlint-enable no-space-in-emphasis -->
 
 ls -la ~/.cargo/bin/
 
