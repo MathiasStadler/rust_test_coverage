@@ -11,15 +11,12 @@
     ```
 
 > [!NOTE]
-> Code block is marked by [backticks}(https://commonmark.org/help/tutorial/09-code.html)
-&nbsp
+> Code block is marked by [backticks](https://commonmark.org/help/tutorial/09-code.html)
+&nbsp;
 > [!NOTE]
 > Extension markdownlint: disable problem message inside MS VSCode for code block e.g. bash code block
-> MD046/code-block-style: Code block style [Expected: indented; Actual: fenced]
 >
-> ```bash <!-- markdownlint-disable-line code-block-style -->
-> ```bash <!-- markdownlint-disable-line code-block-style -->
-> ```
+> - MD046/code-block-style: Code block style [Expected: indented; Actual: fenced]
 >
 > ```` <!-- markdownlint-disable-line code-block-style -->
 > ```bash <!-- markdownlint-disable-line code-block-style -->
