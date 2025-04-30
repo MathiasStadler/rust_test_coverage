@@ -56,7 +56,6 @@ touch README.md \
 
 > [!TIP]
 > [Markdownlint: Inline rule ignore](https://github.com/DavidAnson/markdownlint/blob/main/README.md#configuration)
-<-- empty line -->
 &nbsp;
 > [!TIP]
 > Show all already installed components
@@ -79,8 +78,8 @@ touch README.md \
 > [!NOTE]
 > cargo add vs cargo install
 >
-> cargo-add — Add dependencies to a Cargo.toml manifest file
-> cargo install - Build and install a Rust binary to the local rust installation
+> - cargo-add — Add dependencies to a Cargo.toml manifest file
+> - cargo install - Build and install a Rust binary to the local rust installation
 >
 > ```bash <!-- markdownlint-disable-line code-block-style -->
 > cargo install  cargo-nextest
