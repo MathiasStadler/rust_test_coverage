@@ -9,7 +9,7 @@
 >
 &nbsp;
 > [!NOTE]
-> Extension markdownlint: disable problem message inside MS VSCode for code block e.g. bash code block
+> Extension markdownlint: Disable problem message inside MS VSCode for code block e.g. bash code block
 >
 > - MD046/code-block-style: Code block style [Expected: indented; Actual: fenced]
 >
@@ -21,7 +21,7 @@
 >
 &nbsp;
 > [!NOTE]
-> [e.g](https://simple.wikipedia.org/wiki/Exempli_gratia)
+> [e.g](https://simple.wikipedia.org/wiki/Exempli_gratia) Exempli gratia means "for example" in Latin
 >
 > - Exempli gratia is a linking word \
 > mostly known in English-speaking countries \
@@ -104,7 +104,7 @@ cargo install cargo-nextest
 >
 > ```bash <!-- markdownlint-disable-line code-block-style -->
 > cargo add color-eyre
-> cargo install nextest
+> cargo install cargo-nextest
 >```
 >
 > list installed Rust binary e.g. cargo-nextest
@@ -113,13 +113,77 @@ cargo install cargo-nextest
 > cargo install --list |grep cargo-nextest
 > ```
 
-## Rust supports three types of tests: unit, doc, and integration
+## Rust supports three types of tests
+
+- unit
+- doc
+- integration
 
 ### unit test  - inside the same file
 
+- [cargo-test Rust Book](https://doc.rust-lang.org/cargo/commands/cargo-test.html)
+
 - [create HelloWorld with test](https://learn-with-tests.github.io/learn-rust-with-tests/)
 
-```bash <!-- markdownlint-disable-line code-block-style --> 
+```bash <!-- markdownlint-disable-line code-block-style -->
+
+```
+
+## [How write first simple test - main.rs)](https://doc.rust-lang.org/book/ch11-01-writing-tests.html)
+
+- rust test code
+  
+```rust <!-- markdownlint-disable-line code-block-style -->
+//src/main.rs
+// How do you test this fn main ? It is good to separate your "domain"
+// code from the outside world (side effects).
+// The println! is a side effect (printing to stdout)
+// and the string we send in is our domain.
+// modified example from here
+// [FOUND HERE](https://learn-with-tests.github.io/learn-rust-with-tests/)
+
+fn println_hello_world() -> String {
+    String::from("Hello, world!")
+}
+
+fn main() {
+    println!("{}",println_hello_world());
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_println_hello_world() {
+        assert_eq!(println_hello_world(), "Hello, world!");
+    }
+
+}
+```
+
+- run single testcase by name  inside the project folder
+  
+```bash <!-- markdownlint-disable-line code-block-style -->
+# cargo test <test case name>
+
+cargo test test_println_hello_world
+
+Compiling rust_test_coverage v0.1.0 (/home/trapapa/rust_test_coverage)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.28s
+     Running unittests src/lib.rs (target/debug/deps/rust_test_coverage-45de6f6799a3e60f)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 1 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/deps/rust_test_coverage-c53a497db42afdea)
+
+running 1 test
+test tests::test_println_hello_world ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
 
 ```
 

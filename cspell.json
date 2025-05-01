@@ -3,7 +3,12 @@
     "ignorePaths": [],
     "dictionaryDefinitions": [],
     "dictionaries": [],
-    "words": [],
+    "words": [
+        "debuginfo",
+        "println",
+        "trapapa",
+        "unittests"
+    ],
     "ignoreWords": [],
     "import": []
 }
