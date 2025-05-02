@@ -17,7 +17,7 @@
 &nbsp;
 -->
 
-## date - start this project
+## Date - start this repo
 
 - command
 
@@ -31,7 +31,7 @@ date
 Fri May  2 04:55:45 PM CEST 2025
 ```
 
-## os environment
+## OS environment
 
 - command
 
@@ -53,7 +53,9 @@ SUPPORT_URL="https://www.debian.org/support"
 BUG_REPORT_URL="https://bugs.debian.org/
 ```
 
-## install rust via linux command line [Link](https://www.rust-lang.org/tools/install)
+## [!TIP] - All following steps of the tutorial are carried out as a normal user in his own home directory
+
+## Install rust via linux command line [Link](https://www.rust-lang.org/tools/install)
 
 - command
 
@@ -63,9 +65,9 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 - output
 
-> [!NOT] - Follow the large output dialog
+> [!NOTE] - Follow the large output dialog
 
-## rust installed version
+## Rust installed version
 
 - command
 
@@ -92,7 +94,7 @@ installed targets:
   x86_64-unknown-linux-gnu
 ```
 
-## only a list about available toolchain
+## Only a list about installed toolchain
 
 - command
 
