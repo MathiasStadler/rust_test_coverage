@@ -3,6 +3,7 @@
         "evcxr",
         "nextest",
         "pkill",
+        "rustc",
         "rustup"
     ]
 }
