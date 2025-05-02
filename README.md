@@ -189,6 +189,12 @@ test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; fini
 
 ## [follow the tutorial](https://zerotomastery.io/blog/complete-guide-to-testing-code-in-rust/)
 
+## [Welcome to "Advanced Rust testing"](https://rust-exercises.com/advanced-testing/00_intro/00_welcome.html)
+
+## [Welcome to "Advanced Rust testing - GitHub Repo](https://github.com/mainmatter/rust-advanced-testing-workshop/tree/solutions)
+
+## [Advanced Rust testing](https://rust-exercises.com/advanced-testing/09_test_harness/00_intro.htm)
+
 ## buffer
 
     - color-eyre v0.6.3
