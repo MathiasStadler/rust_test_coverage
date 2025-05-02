@@ -5,6 +5,7 @@
         "nextest",
         "pkill",
         "rustc",
-        "rustup"
+        "rustup",
+        "tlsv"
     ]
 }
