@@ -97,9 +97,11 @@ installed targets:
 ## Only a list about installed toolchain
 
 - command
+TODO Fix with the current command
 
 ```bash
-cargo install --list
+#
+# cargo install --list
 ```
 
 - output
@@ -158,3 +160,51 @@ info: installing component 'rustc'
  76.1 MiB /  76.1 MiB (100 %)  13.5 MiB/s in  5s         
 info: installing component 'rustfmt
 ```
+
+> [!TIP]
+> Show all already installed components
+>
+> ```bash <!-- markdownlint-disable-line code-block-style -->
+>cargo install --list
+>```
+>
+&nbsp;
+> [!TIP]
+> Or show all Rust binary
+>
+> ```bash <!-- markdownlint-disable-line code-block-style -->
+> ls -la ~/.cargo/bin/
+> ```
+
+## Install cargo-nextest and check
+
+```bash <!-- markdownlint-disable-line code-block-style -->
+cargo install cargo-nextest 
+```
+
+> [!NOTE]
+> cargo add vs cargo install
+>
+> - cargo add — Add dependencies to a Cargo.toml manifest file
+> - cargo install - Build and install a Rust binary to the local rust installation
+>
+> ```bash <!-- markdownlint-disable-line code-block-style -->
+> cargo add color-eyre
+> cargo install cargo-nextest
+>```
+>
+> list installed Rust binary e.g. cargo-nextest
+>
+> ```bash <!-- markdownlint-disable-line code-block-style -->
+> cargo install --list |grep cargo-nextest
+> ```
+
+## Rust supports three types of tests
+
+- unit
+- doc
+- integration
+
+## Test Organization [Link}[https://doc.rust-lang.org/book/ch11-03-test-organization.html]
+
+## Use rust cargo to run tests in workspace root [Link](https://stackoverflow.com/questions/71460402/use-rust-cargo-to-run-tests-in-workspace-root)

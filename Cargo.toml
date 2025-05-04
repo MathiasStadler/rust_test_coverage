@@ -5,3 +5,8 @@ edition = "2024"
 
 [dependencies]
 rustfmt = "0.10.0"
+
+
+[[test]]
+name = "it_works"
+path = "tests/test_2,rs"

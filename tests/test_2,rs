@@ -12,3 +12,20 @@ mod tests {
         assert_eq!(result, 4);
     }
 }
+
+
+/* run test it_works
+
+a) add to Cargo,toml
+
+[[test]]
+name = "it_works"
+path = "tests/test_2,rs"
+
+b) run with command on command line
+
+cargo test --test it_works
+cargo test it_works
+
+
+*/
