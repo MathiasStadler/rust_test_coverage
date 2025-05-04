@@ -53,7 +53,7 @@ SUPPORT_URL="https://www.debian.org/support"
 BUG_REPORT_URL="https://bugs.debian.org/
 ```
 
-## [!TIP] - All following steps of the tutorial are carried out as a normal user in his own home directory
+## [!INFO] - All following steps of the tutorial are carried out as a normal user in his own home directory
 
 ## Install rust via linux command line [Link](https://www.rust-lang.org/tools/install)
 
@@ -111,7 +111,7 @@ stable-x86_64-unknown-linux-gnu (active, default)
 nightly-x86_64-unknown-linux-gnu
 ```
 
-## update rust to the last stable version
+## Update rust to the last stable version
 
 - command
 
@@ -129,7 +129,7 @@ info: syncing channel updates for 'stable-x86_64-unknown-linux-gnu'
 info: checking for self-update
 ```
 
-## install to the last NIGHTLY VERSION
+## Install to the last NIGHTLY VERSION
 
 - command
 
@@ -214,7 +214,7 @@ cargo install cargo-nextest
 > Try out a different version of the Rust Book,
 > featuring: quizzes, highlighting, visualizations, and more:[LINK](https://rust-book.cs.brown.edu/)
 
-## first test inside main.rs
+## First test inside main.rs
 
 ```bash
 fn println_hello_world() -> String {
@@ -236,3 +236,20 @@ mod tests {
 
 }
 ```
+
+## GITHUB Marker
+
+> [!NOTE]
+> Useful information that users should know, even when skimming content.
+<!-- -->
+> [!TIP]
+> Helpful advice for doing things better or more easily.
+<!-- -->
+> [!IMPORTANT]
+> Key information users need to know to achieve their goal.
+<!-- -->
+> [!WARNING]
+> Urgent info that needs immediate user attention to avoid problems.
+<!-- -->
+> [!CAUTION]
+> Advises about risks or negative outcomes of certain actions.
