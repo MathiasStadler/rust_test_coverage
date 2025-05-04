@@ -205,6 +205,11 @@ cargo install cargo-nextest
 - doc
 - integration
 
-## Test Organization [Link}[https://doc.rust-lang.org/book/ch11-03-test-organization.html]
-
-## Use rust cargo to run tests in workspace root [Link](https://stackoverflow.com/questions/71460402/use-rust-cargo-to-run-tests-in-workspace-root)
+> [!TIP] Test Organization [Link}[https://doc.rust-lang.org/book/ch11-03-test-organization.html]
+&nbsp;
+> [!TIP] Use rust cargo to run tests in workspace root [Link](https://stackoverflow.com/questions/71460402/use-rust-cargo-to-run-tests-in-workspace-root)
+&nbsp;
+> [!TIP]
+> Want a more interactive learning experience?
+> Try out a different version of the Rust Book,
+> featuring: quizzes, highlighting, visualizations, and more:[LINK](https://rust-book.cs.brown.edu/)
