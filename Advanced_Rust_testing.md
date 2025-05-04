@@ -65,7 +65,8 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 - output
 
-> [!NOTE] - Follow the large output dialog
+> [!NOTE]
+> Follow the large output dialog
 
 ## Rust installed version
 
@@ -205,9 +206,11 @@ cargo install cargo-nextest
 - doc
 - integration
 
-> [!TIP] Test Organization [Link}[https://doc.rust-lang.org/book/ch11-03-test-organization.html]
+> [!TIP]
+> Test Organization [Link}[https://doc.rust-lang.org/book/ch11-03-test-organization.html]
 &nbsp;
-> [!TIP] Use rust cargo to run tests in workspace root [Link](https://stackoverflow.com/questions/71460402/use-rust-cargo-to-run-tests-in-workspace-root)
+> [!TIP]
+> Use rust cargo to run tests in workspace root [Link](https://stackoverflow.com/questions/71460402/use-rust-cargo-to-run-tests-in-workspace-root)
 &nbsp;
 > [!TIP]
 > Want a more interactive learning experience?
