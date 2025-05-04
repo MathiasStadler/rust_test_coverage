@@ -172,7 +172,7 @@ info: installing component 'rustfmt
 > [!TIP]
 > Or show all Rust binary
 >
-> ```bash <!-- markdownlint-disable-line code-block-style -->
+> ```bash
 > ls -la ~/.cargo/bin/
 > ```
 
@@ -213,3 +213,26 @@ cargo install cargo-nextest
 > Want a more interactive learning experience?
 > Try out a different version of the Rust Book,
 > featuring: quizzes, highlighting, visualizations, and more:[LINK](https://rust-book.cs.brown.edu/)
+
+## first test inside main.rs
+
+```bash
+fn println_hello_world() -> String {
+  String::from("Hello, world!")
+}
+
+fn main() {
+  println!("{}",println_hello_world());
+}
+
+#[cfg(test)]
+mod tests {
+  use super::*;
+
+  #[test]
+  fn test_println_hello_world() {
+  assert_eq!(println_hello_world(), "Hello, world!");
+  }
+
+}
+```
