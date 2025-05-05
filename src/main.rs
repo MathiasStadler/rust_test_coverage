@@ -15,9 +15,9 @@ fn println_hello_world() -> String {
 
 fn main() {
 
-    let msg = second.msg();
+    let msg= second::msg();
     println!("{}",println_hello_world());
-    println!("{}",msg);
+    println!("{}", msg);
 }
 
 #[cfg(test)]

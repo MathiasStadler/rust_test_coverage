@@ -1,4 +1,4 @@
 #[allow(dead_code)]
-pub fn msg(){
-    print!("Hello from second")
+pub fn msg() -> String{
+    "Hello from second".to_string()
 }
