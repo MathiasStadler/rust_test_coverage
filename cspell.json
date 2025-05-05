@@ -5,7 +5,10 @@
     "dictionaries": [],
     "words": [
         "debuginfo",
+        "grcov",
         "println",
+        "profraw",
+        "RUSTFLAGS",
         "trapapa",
         "unittests"
     ],

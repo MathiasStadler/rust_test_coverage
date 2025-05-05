@@ -346,6 +346,47 @@ mod tests {
 }
 ```
 
+## install rust-grov
+
+```bash
+# as root
+sudo apt update
+sudo apt install grcov
+sudo apt install librust-grcov-dev
+```
+
+## [How to do code coverage in Rust](https://blog.rng0.io/how-to-do-code-coverage-in-rust/)
+
+```bash
+CARGO_INCREMENTAL=0 RUSTFLAGS='-Cinstrument-coverage' LLVM_PROFILE_FILE='cargo-test-%p-%m.profraw' cargo test
+```
+
+## create folder for html output - my way doesn't know another
+
+```bash
+mkdir target/coverage
+mkdir target/coverage/html
+```
+
+## Output as HTML
+
+```bash
+# change into project directory
+# cd  <project folder>
+
+# command to create 
+grcov . --binary-path ./target/debug/deps/ -s . -t html --branch --ignore-not-existing --ignore '../*' --ignore "/*" -o target/coverage/html
+
+# output can you find into  <project folder>/target/coverage/html/index.html
+
+```
+
+## Inline coverage with VSCode
+
+- you can do that with the **coverage gutters** extension - install first
+
+- [Coverage-Gutter extension for visual studio code is not showing line coverage - .NET](https://stackoverflow.com/questions/74983417/coverage-gutter-extension-for-visual-studio-code-is-not-showing-line-coverage)
+
 ## GITHUB Marker
 
 > [!NOTE]
