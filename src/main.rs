@@ -5,12 +5,19 @@
 // modified example from here
 // [FOUND HERE](https://learn-with-tests.github.io/learn-rust-with-tests/)
 
+mod second;
+
+
+
 fn println_hello_world() -> String {
     String::from("Hello, world!")
 }
 
 fn main() {
+
+    let msg = second.msg();
     println!("{}",println_hello_world());
+    println!("{}",msg);
 }
 
 #[cfg(test)]

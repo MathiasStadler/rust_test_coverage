@@ -53,9 +53,10 @@ SUPPORT_URL="https://www.debian.org/support"
 BUG_REPORT_URL="https://bugs.debian.org/
 ```
 
-## [!INFO] - All following steps of the tutorial are carried out as a normal user in his own home directory
+> [!IMPORTANT]
+> All following steps of this tutorial are carried out as a normal user in his own home directory
 
-## Install rust via linux command line [Link](https://www.rust-lang.org/tools/install)
+## Install rust on linux via command line - bash shell [Link](https://www.rust-lang.org/tools/install)
 
 - command
 
@@ -66,7 +67,7 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 - output
 
 > [!NOTE]
-> Follow the large output dialog
+> Follow the large output dialog - Not display here
 
 ## Rust installed version
 
@@ -95,21 +96,34 @@ installed targets:
   x86_64-unknown-linux-gnu
 ```
 
-## Only a list about installed toolchain
+## Get version number
 
 - command
-TODO Fix with the current command
 
 ```bash
-#
-# cargo install --list
+rustc --version
+```
+
+- output
+
+```txt
+rustc 1.86.0 (05f9846f8 2025-03-31)
+```
+
+## Check / list only installed toolchain - Check for updates to Rust toolchains and rustup
+
+- command
+
+```bash
+rustup check
 ```
 
 - output
 
 ```text
-stable-x86_64-unknown-linux-gnu (active, default)
-nightly-x86_64-unknown-linux-gnu
+stable-x86_64-unknown-linux-gnu - Up to date : 1.86.0 (05f9846f8 2025-03-31)
+nightly-x86_64-unknown-linux-gnu - Update available : 1.88.0-nightly (3350c1eb3 2025-05-01) -> 1.88.0-nightly (d6a325d93 2025-05-03)
+rustup - Up to date : 1.28.1
 ```
 
 ## Update rust to the last stable version
@@ -130,13 +144,15 @@ info: syncing channel updates for 'stable-x86_64-unknown-linux-gnu'
 info: checking for self-update
 ```
 
-## Install to the last NIGHTLY VERSION
+## Install to the last ***nightly*** version
 
 - command
 
 ```bash
 rustup toolchain install nightly
 ```
+
+- output
 
 ```text
  rustup toolchain install nightly
@@ -171,13 +187,13 @@ info: installing component 'rustfmt
 >
 &nbsp;
 > [!TIP]
-> Or show all Rust binary
+> Or show all installed Rust binary
 >
 > ```bash
 > ls -la ~/.cargo/bin/
 > ```
 
-## Install cargo-nextest and check
+## Install cargo-nextest and check - A next-generation test runner for Rust [Link](https://crates.io/crates/cargo-nextest)
 
 ```bash <!-- markdownlint-disable-line code-block-style -->
 cargo install cargo-nextest 
@@ -202,10 +218,11 @@ cargo install cargo-nextest
 
 ## Rust supports three types of tests
 
-- unit
-- doc
-- integration
+- unit - unit tests is to test each unit of code in isolation from the rest of the code [Link](https://doc.rust-lang.org/book/ch11-03-test-organization.html)
+- doc - supports executing your documentation examples as tests. This makes sure that examples within your documentation are up to date and working [Link](https://doc.rust-lang.org/rustdoc/write-documentation/documentation-tests.html)
+- integration - test the library in the same way any other code would, which means they can only call functions that are part of your library’s public API. [Link](https://doc.rust-lang.org/book/ch11-03-test-organization.html)
 
+&nbsp;
 > [!TIP]
 > Test Organization [Link}[https://doc.rust-lang.org/book/ch11-03-test-organization.html]
 &nbsp;
@@ -216,8 +233,14 @@ cargo install cargo-nextest
 > Want a more interactive learning experience?
 > Try out a different version of the Rust Book,
 > featuring: quizzes, highlighting, visualizations, and more:[LINK](https://rust-book.cs.brown.edu/)
+&nbsp;
+> [!Tip]
+> [Should unit tests really be put in the same file as the source?](https://users.rust-lang.org/t/should-unit-tests-really-be-put-in-the-same-file-as-the-source/62153/2)
+>
+>> ***REASON*** A nice advantage of this separation is that it speeds up compilation and thus saves time, since the compiler does not have to analyze/compile the tests. :smiley:
+&nbsp;
 
-## First test inside main.rs
+## Simple testcase inside main.rs
 
 ```bash
 fn println_hello_world() -> String {
@@ -237,6 +260,87 @@ mod tests {
   assert_eq!(println_hello_world(), "Hello, world!");
   }
 
+}
+```
+
+> [!INFO]
+> call method from library in another file [Rust lib vs main](https://www.youtube.com/watch?v=5F6pHtkWMxg&t=28s)
+>
+>```rust
+> //lib.rs
+> pub fn some_function(){
+>  println("Hello from lib.rs);
+> )
+>```
+>
+> ```rust
+> //main.rs call the lib function
+> mod lib
+> pub fn main(){
+> lib.some_function();
+> }
+>
+
+&nbsp;
+
+## Simple testcase inside lib.rs
+
+```bash
+pub fn add(left: u64, right: u64) -> u64 {
+    left + right
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn lib_it_works() {
+        let result = add(2, 2);
+        assert_eq!(result, 4);
+    }
+}
+```
+
+&nbsp;
+> [!NOTE]
+> Comment inside TOML File
+>
+> ```toml
+> # A hash symbol marks the rest of the line as a comment, except when inside a string.
+> ```
+>
+&nbsp;
+
+## Simple testcase inside a separate directory tests parallel  to src directory
+
+> [!important]
+> For this case must the testcase declare inside the project cargo.toml with follow line
+>
+> ```text
+> [[test]]
+> # name = name of test
+> name = "it_works"
+> # path relative path to the testcase 
+> path = "tests/test_2,rs"
+>```
+>
+&nbsp;
+
+```bash
+pub fn add(left: u64, right: u64) -> u64 {
+    left + right
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn it_works() {
+        let result = add(2, 2);
+        assert_eq!(result, 4);
+    }
 }
 ```
 
