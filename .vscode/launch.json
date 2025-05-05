@@ -1,0 +1,120 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in library 'rust_test_coverage'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--lib",
+                    "--package=rust_test_coverage"
+                ],
+                "filter": {
+                    "name": "rust_test_coverage",
+                    "kind": "lib"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'rust_test_coverage'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=rust_test_coverage",
+                    "--package=rust_test_coverage"
+                ],
+                "filter": {
+                    "name": "rust_test_coverage",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'rust_test_coverage'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=rust_test_coverage",
+                    "--package=rust_test_coverage"
+                ],
+                "filter": {
+                    "name": "rust_test_coverage",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug example 'example'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--example=example",
+                    "--package=rust_test_coverage"
+                ],
+                "filter": {
+                    "name": "example",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in example 'example'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--example=example",
+                    "--package=rust_test_coverage"
+                ],
+                "filter": {
+                    "name": "example",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug integration test 'it_works'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--test=it_works",
+                    "--package=rust_test_coverage"
+                ],
+                "filter": {
+                    "name": "it_works",
+                    "kind": "test"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
