@@ -51,8 +51,6 @@ ID=debian
 HOME_URL="https://www.debian.org/"
 SUPPORT_URL="https://www.debian.org/support"
 BUG_REPORT_URL="https://bugs.debian.org/
-TODO
-FIXME
 ```
 
 > [!IMPORTANT]
@@ -386,6 +384,10 @@ grcov . --binary-path ./target/debug/deps/ -s . -t html --branch --ignore-not-ex
 - you can do that with the **coverage gutters** extension - install first
 
 - [Coverage-Gutter extension for visual studio code is not showing line coverage - .NET](https://stackoverflow.com/questions/74983417/coverage-gutter-extension-for-visual-studio-code-is-not-showing-line-coverage)
+
+## Buffer
+
+- [reddit coverage](https://www.reddit.com/r/rust/comments/y3zzze/rust_project_test_coverage/?rdt=56070)
 
 ## GITHUB Marker
 

@@ -7,6 +7,7 @@
         "librust",
         "nextest",
         "pkill",
+        "redit",
         "rustc",
         "rustup",
         "tlsv"
